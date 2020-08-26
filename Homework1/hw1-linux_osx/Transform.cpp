@@ -61,10 +61,10 @@ mat4 Transform::lookAt(vec3 eye, vec3 up) {
 
 	// final matrix
 	mat4 out = mat4(
-		u.x, u.y, u.z, glm::dot(u, -eye),
-		v.x, v.y, v.z, glm::dot(v, -eye),
-		w.x, w.y, w.z, glm::dot(w, -eye),
-		0, 0, 0, 1
+		u.x, u.y, -u.z, 0,
+		v.x, v.y, v.z, 0,
+		-w.x, w.y, w.z, 0,
+		glm::dot(u, -eye), glm::dot(v, -eye), glm::dot(w, -eye), 1
 	);
 
 	// You will change this return call

@@ -238,27 +238,6 @@ void display() {
 	}
 	else {
 		view = Transform::lookAt(eye,up);
-
-		// Prints view matrix
-		std::cout << view[0][0] << " ";
-		std::cout << view[0][1] << " ";
-		std::cout << view[0][2] << " ";
-		std::cout << view[0][3] << std::endl;
-		
-		std::cout << view[1][0] << " ";
-		std::cout << view[1][1] << " ";
-		std::cout << view[1][2] << " ";
-		std::cout << view[1][3] << std::endl;
-		
-		std::cout << view[2][0] << " ";
-		std::cout << view[2][1] << " ";
-		std::cout << view[2][2] << " ";
-		std::cout << view[2][3] << std::endl;
-		
-		std::cout << view[3][0] << " ";
-		std::cout << view[3][1] << " ";
-		std::cout << view[3][2] << " ";
-		std::cout << view[3][3] << std::endl << std::endl;
 	}
 
 	// Set Light and Material properties for the teapot
